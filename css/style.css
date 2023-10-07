@@ -50,6 +50,7 @@ a {
   width: 0%;
   background: #ffffff;
   margin-top: 4px;
+  transition: 0.3s;
 }
 
 .header-menu a:hover:after {
