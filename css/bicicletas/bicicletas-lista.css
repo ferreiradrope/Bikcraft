@@ -1,4 +1,9 @@
 .bicletas-lista {
-  padding-top: 10200px;
-  padding-bottom: 1120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.bicletas-lista ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
