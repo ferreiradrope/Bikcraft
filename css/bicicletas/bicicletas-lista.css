@@ -16,10 +16,16 @@
 .bicletas-lista ul {
   display: flex;
   gap: 40px;
-  padding: 0 20px;
+  padding: 0 20px 21px 20px;
   max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
+  overflow-x: auto;
+}
+
+.bicletas-lista li {
+  flex: 1;
+  min-width: 280px;
 }
 
 .bicletas-lista a {
@@ -27,7 +33,14 @@
 }
 
 .bicletas-lista img {
+  transition: all 0.2s;
   margin-bottom: 16px;
+}
+
+.reaper {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
 }
 
 .bicletas-lista h3 {
@@ -43,8 +56,26 @@
   width: 12px;
   margin-right: 8px;
   background-color: var(--cor-p1);
+  transition: width 0.2s;
+}
+
+.bicletas-lista a:hover h3::before {
+  width: 24px;
+}
+
+.bicletas-lista a:hover img {
+  transform: scale(1.1);
 }
 
 .bicletas-lista li span {
   padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .bicletas-lista {
+    padding-bottom: 120px;
+  }
+  .bicletas-lista ul {
+    gap: 20px;
+  }
 }
