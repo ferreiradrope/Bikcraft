@@ -1,3 +1,7 @@
 .seguros-bg {
   background: var(--cor-11);
 }
+.container {
+  display: flex;
+  gap: 40px;
+}
